@@ -1,4 +1,4 @@
-baseurl = "http://hierux.cloud/"
+baseurl = "https://hierux.cloud/"
 title = "cloud-engineering"
 
 theme = "hugo-coder"

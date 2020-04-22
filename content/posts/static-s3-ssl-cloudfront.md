@@ -45,3 +45,10 @@ By using a combination of S3, CloudFront, and Route53 you can set up a highly av
 
 **configure cloudfront distribution**
     - speed up load times (serve static content closer to our end users) and provide SSL encryption for added security using CloudFront
+
+
+Before you sync with S3, make sure you run the raw server command to specify the baseURL
+
+notes:
+`aws s3 sync public/ s3://hierux.cloud --delete`
+`hugo server -D --renderToDisk --baseURL=https://hierux.cloud --appendPort=false`

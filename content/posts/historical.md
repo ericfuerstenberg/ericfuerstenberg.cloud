@@ -1,6 +1,6 @@
 +++ 
 date = 2020-04-18T08:46:50-07:00
-title = "Historical work"
+title = "Terraform, AWS, and other personal progress"
 description = "A backup dump of my previous work thus far, on another static site."
 slug = "" 
 tags = [

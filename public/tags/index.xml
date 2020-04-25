@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on eric fuerstenberg</title>
+    <link>https://hierux.cloud/tags/</link>
+    <description>Recent content in Tags on eric fuerstenberg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 22 Apr 2020 08:07:23 -0700</lastBuildDate>
+    
+	<atom:link href="https://hierux.cloud/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>hugo</title>
+      <link>https://hierux.cloud/tags/hugo/</link>
+      <pubDate>Wed, 22 Apr 2020 08:07:23 -0700</pubDate>
+      
+      <guid>https://hierux.cloud/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://hierux.cloud/tags/python/</link>
+      <pubDate>Wed, 22 Apr 2020 08:07:23 -0700</pubDate>
+      
+      <guid>https://hierux.cloud/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>terraform</title>
+      <link>https://hierux.cloud/tags/terraform/</link>
+      <pubDate>Wed, 22 Apr 2020 08:07:23 -0700</pubDate>
+      
+      <guid>https://hierux.cloud/tags/terraform/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>aws</title>
+      <link>https://hierux.cloud/tags/aws/</link>
+      <pubDate>Sat, 18 Apr 2020 14:39:34 -0700</pubDate>
+      
+      <guid>https://hierux.cloud/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cloud</title>
+      <link>https://hierux.cloud/tags/cloud/</link>
+      <pubDate>Sat, 18 Apr 2020 14:39:34 -0700</pubDate>
+      
+      <guid>https://hierux.cloud/tags/cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cloudfront</title>
+      <link>https://hierux.cloud/tags/cloudfront/</link>
+      <pubDate>Sat, 18 Apr 2020 14:39:34 -0700</pubDate>
+      
+      <guid>https://hierux.cloud/tags/cloudfront/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>learning</title>
+      <link>https://hierux.cloud/tags/learning/</link>
+      <pubDate>Sat, 18 Apr 2020 14:39:34 -0700</pubDate>
+      
+      <guid>https://hierux.cloud/tags/learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>route53</title>
+      <link>https://hierux.cloud/tags/route53/</link>
+      <pubDate>Sat, 18 Apr 2020 14:39:34 -0700</pubDate>
+      
+      <guid>https://hierux.cloud/tags/route53/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>s3</title>
+      <link>https://hierux.cloud/tags/s3/</link>
+      <pubDate>Sat, 18 Apr 2020 14:39:34 -0700</pubDate>
+      
+      <guid>https://hierux.cloud/tags/s3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>https://hierux.cloud/tags/docker/</link>
+      <pubDate>Sat, 18 Apr 2020 08:46:50 -0700</pubDate>
+      
+      <guid>https://hierux.cloud/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>development</title>
+      <link>https://hierux.cloud/tags/development/</link>
+      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hierux.cloud/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>themes</title>
+      <link>https://hierux.cloud/tags/themes/</link>
+      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hierux.cloud/tags/themes/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

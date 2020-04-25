@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on eric fuerstenberg</title>
+    <link>https://hierux.cloud/posts/</link>
+    <description>Recent content in Posts on eric fuerstenberg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 22 Apr 2020 08:07:23 -0700</lastBuildDate>
+    
+	<atom:link href="https://hierux.cloud/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Today I learned..</title>
+      <link>https://hierux.cloud/posts/daily1/</link>
+      <pubDate>Wed, 22 Apr 2020 08:07:23 -0700</pubDate>
+      
+      <guid>https://hierux.cloud/posts/daily1/</guid>
+      <description>Here&amp;rsquo;s what I&amp;rsquo;m up to today.  Studying python Alerts as code! Continuing my work on templatizing alerts and dashboards in Terraform, using the Wavefront TF provider integration. Creating a framework to programmatically manage all of my team&amp;rsquo;s active alerts and dashboards in Wavefront using Terraform. Making small tweaks to this Hugo site.  to-do list includes:  add an &amp;ldquo;about me&amp;rdquo; &amp;amp; skills section configure the infrastructure in terraform (s3 buckets, route53 dns assignments, cloudfront distribution) set up ci/cd pipeline using codeship for automatic deployments      </description>
+    </item>
+    
+    <item>
+      <title>Hosting a high performance static site with S3, Route53, &amp; SSL via CloudFront</title>
+      <link>https://hierux.cloud/posts/static-s3-ssl-cloudfront/</link>
+      <pubDate>Sat, 18 Apr 2020 14:39:34 -0700</pubDate>
+      
+      <guid>https://hierux.cloud/posts/static-s3-ssl-cloudfront/</guid>
+      <description>Update: Hugo I recently reconfigured my static website (still hosted at cloud.hierux.com) into a more feature rich site using Hugo - you&amp;rsquo;re looking at it right now! This allows me to make use of style templates and other feature enhancements while keeping things simple with markdown.
+You can find the Hugo-ified version of my website in my Github repo.
+I&amp;rsquo;ve hosted static sites using a number of different strategies in the past.</description>
+    </item>
+    
+    <item>
+      <title>Terraform, AWS, and other personal progress</title>
+      <link>https://hierux.cloud/posts/historical/</link>
+      <pubDate>Sat, 18 Apr 2020 08:46:50 -0700</pubDate>
+      
+      <guid>https://hierux.cloud/posts/historical/</guid>
+      <description>Notes step by step: 04/15/20
+1. working with terraform and ec2
+- creating instances using amis
+- running bootstrap script to configure instance as webserver
+- configure security groups (ingress/egress on ports 80 &amp;amp; 443)
+- assign security groups to ec2 instances
+- capture public/private ips of instances as output
+ to do:
+1. configure this static side in hugo
+2. set up s3 bucket for static hosting in aws and use terraform to manage this process</description>
+    </item>
+    
+    <item>
+      <title>Reference: Hugo coder wiki</title>
+      <link>https://hierux.cloud/posts/hugo-coder-wiki/</link>
+      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hierux.cloud/posts/hugo-coder-wiki/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

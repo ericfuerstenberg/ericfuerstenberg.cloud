@@ -11,4 +11,10 @@ hugo.exe
 hugo.darwin
 hugo.linux
 
+# Terraform
+.terraform
+*.tfstate*
+terraform.d
+
+
 # End of https://www.gitignore.io/api/hugo

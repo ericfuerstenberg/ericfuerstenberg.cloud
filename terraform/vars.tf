@@ -13,10 +13,10 @@ variable "codeship_username" {
  default = "codeship"
 }
 variable "cert_domain_name" {
- default = "*.hierux.cloud"
+ default = "hierux.cloud"
 }
 variable "aws_zone_id" {
- default     = "hierux.cloud"
+ default     = "Z06950211Y62TGQGKYGUK"
  description = "AWS Route 53 Zone ID for DNS"
 }
 variable "hostname" {

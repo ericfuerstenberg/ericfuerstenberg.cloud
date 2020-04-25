@@ -1,15 +1,15 @@
 // Create S3 bucket and CloudFront distribution using Terraform module
 // designed for S3/CloudFront configuration of a Hugo site.
-// See: https://registry.terraform.io/modules/fillup/hugo-s3-cloudfront/aws/1.0.1
+// See: https://registry.terraform.io/modules/fillup/hugo-s3-cloudfront/aws/4.0.0
 
 module "hugosite" {
  source         = "fillup/hugo-s3-cloudfront/aws"
  version        = "4.0.0"
- aliases        = ["${var.aliases}"]
+ aliases        = "${var.aliases}"
  aws_region     = "${var.aws_region}"
  bucket_name    = "${var.bucket_name}"
  cert_domain    = "${var.cert_domain_name}"
- deployment_user_arn = "arn:aws:iam::555636082612:user/codeship"
+ deployment_user_arn = "${var.deployment_user_arn}"
  cf_default_ttl = "0"
  cf_max_ttl     = "0"
 }
@@ -24,14 +24,30 @@ resource "aws_iam_access_key" "codeship" {
 }
 data "template_file" "policy" {
  template = "${file("${path.module}/bucket-policy.json")}"
- vars {
+ vars = {
    bucket_name = "${var.bucket_name}"
+   deployment_user_arn = "${var.deployment_user_arn}"
  }
 }
 resource "aws_iam_user_policy" "codeship" {
- policy = "${data.template_file.policy.rendered}"
  user   = "${aws_iam_user.codeship.name}"
-}
+ policy = <<EOF
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Action": [
+            "s3:PutObject",
+            "s3:PutObjectAcl"
+        ],
+        "Effect": "Allow",
+        "Resource": "arn:aws:s3:::${var.bucket_name}/public/*"
+      }
+    ]
+  }
+  EOF
+}  
+
 #Add record to Route 53
 resource "aws_route53_record" "www" {
  zone_id = "${var.aws_zone_id}"
@@ -40,3 +56,8 @@ resource "aws_route53_record" "www" {
  ttl     = "300"
  records = ["${module.hugosite.cloudfront_hostname}"]
 }
+
+# #Import existing S3 bucket
+# resource "aws_s3_bucket" "hierux-cloud" {
+#   # ...instance configuration...
+# }

@@ -1,24 +1,26 @@
 {
-    "Version": "2012-10-17",
-    "Statement": [
-      {
-        "Sid": "PublicRead",
-        "Effect": "Allow",
-        "Principal": "*",
-        "Action": "s3:GetObject",
-        "Resource": "arn:aws:s3:::${bucket_name}/public/*"
-      },
-      {
-        "Sid": "PutWebsite",
-        "Effect": "Allow",
-        "Principal": {
-          "AWS": ["${deployment_user_arn}"]
-        },
-        "Action": [
-          "s3:PutObject",
-          "s3:PutObjectAcl"
-        ],
-        "Resource": "arn:aws:s3:::${bucket_name}/public/*"
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "PublicRead",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::${bucket_name}/public/*"
+    },
+    {
+      "Sid": "Stmt1587832255548",
+      "Action": [
+        "s3:PutObject",
+        "s3:PutObjectAcl"
+      ],
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::${bucket_name}/public/*",
+      "Principal": {
+        "AWS": [
+          "${deployment_user_arn}"
+        ]
       }
-    ]
-  }
+    }
+  ]
+}

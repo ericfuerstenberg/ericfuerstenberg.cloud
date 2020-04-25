@@ -4,7 +4,7 @@ variable "aliases" {
  description = "List of hostname aliases"
 }
 variable "aws_region" {
- default = "us-west-1"
+ default = "us-east-1"
 }
 variable "bucket_name" {
  default = "hierux.cloud"
@@ -22,4 +22,9 @@ variable "aws_zone_id" {
 variable "hostname" {
  default     = "www.hierux.cloud"
  description = "Full hostname for Route 53 entry"
+}
+variable "deployment_user_arn" {
+  description = "ARN for user who is able to put objects into S3 bucket"
+  type        = string
+  default     = "arn:aws:iam::555636082612:user/codeship"
 }

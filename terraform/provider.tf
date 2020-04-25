@@ -1,4 +1,5 @@
 provider "aws" {
   profile = "terraform"
-  region = "${var.aws_region}"
+  region  = var.aws_region
 }
+

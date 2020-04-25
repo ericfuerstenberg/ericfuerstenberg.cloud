@@ -3,9 +3,9 @@
 #the AWS credentials profile you want to use.
 terraform {
  backend "s3" {
-   bucket         = "hierux-terraform"
+   bucket         = "hierux.cloud-terraform"
    key            = "terraform.tfstate"
-   region         = "us-west-1"
+   region         = "us-east-1"
    encrypt        = true
    dynamodb_table = "terraform-lock"
    profile        = "terraform"

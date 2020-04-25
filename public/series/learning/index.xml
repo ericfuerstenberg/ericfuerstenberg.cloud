@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Learning on eric fuerstenberg</title>
-    <link>https://hierux.cloud/series/learning/</link>
+    <link>https://www.hierux.cloud/series/learning/</link>
     <description>Recent content in Learning on eric fuerstenberg</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 18 Apr 2020 08:46:50 -0700</lastBuildDate>
     
-	<atom:link href="https://hierux.cloud/series/learning/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.hierux.cloud/series/learning/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Terraform, AWS, and other personal progress</title>
-      <link>https://hierux.cloud/posts/historical/</link>
+      <link>https://www.hierux.cloud/posts/historical/</link>
       <pubDate>Sat, 18 Apr 2020 08:46:50 -0700</pubDate>
       
-      <guid>https://hierux.cloud/posts/historical/</guid>
+      <guid>https://www.hierux.cloud/posts/historical/</guid>
       <description>Notes step by step: 04/15/20
 1. working with terraform and ec2
 - creating instances using amis

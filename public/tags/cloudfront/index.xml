@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>cloudfront on eric fuerstenberg</title>
-    <link>https://hierux.cloud/tags/cloudfront/</link>
+    <link>https://www.hierux.cloud/tags/cloudfront/</link>
     <description>Recent content in cloudfront on eric fuerstenberg</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 18 Apr 2020 14:39:34 -0700</lastBuildDate>
     
-	<atom:link href="https://hierux.cloud/tags/cloudfront/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.hierux.cloud/tags/cloudfront/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hosting a high performance static site with S3, Route53, &amp; SSL via CloudFront</title>
-      <link>https://hierux.cloud/posts/static-s3-ssl-cloudfront/</link>
+      <link>https://www.hierux.cloud/posts/static-s3-ssl-cloudfront/</link>
       <pubDate>Sat, 18 Apr 2020 14:39:34 -0700</pubDate>
       
-      <guid>https://hierux.cloud/posts/static-s3-ssl-cloudfront/</guid>
+      <guid>https://www.hierux.cloud/posts/static-s3-ssl-cloudfront/</guid>
       <description>Update: Hugo I recently reconfigured my static website (still hosted at cloud.hierux.com) into a more feature rich site using Hugo - you&amp;rsquo;re looking at it right now! This allows me to make use of style templates and other feature enhancements while keeping things simple with markdown.
 You can find the Hugo-ified version of my website in my Github repo.
 I&amp;rsquo;ve hosted static sites using a number of different strategies in the past.</description>

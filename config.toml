@@ -1,5 +1,5 @@
-baseurl = "https://www.hierux.cloud/"
-title = "eric fuerstenberg"
+baseurl = "https://hierux.cloud/"
+title = "Eric Fuerstenberg"
 
 theme = "hugo-coder"
 
@@ -13,7 +13,7 @@ pygmentsstyle = "b2"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-disqusShortname = "cloud-engineering"
+disqusShortname = "hierux"
 
 [params]
     author = "Eric Fuerstenberg"
@@ -23,7 +23,7 @@ disqusShortname = "cloud-engineering"
     avatarurl = "eric_avatar.jpg"
     favicon_32 = "favicon.png"
     #gravatar = "john.doe@example.com"
-    footercontent = "Built on AWS, automated with Terraform and CodeShip "
+    footercontent = "Built on AWS | Automated with Terraform and CodeShip "
 
     dateformat = "January 2, 2006"
 
@@ -33,7 +33,7 @@ disqusShortname = "cloud-engineering"
     since = 2019
 
     # Git Commit in Footer, uncomment the line below to enable it.
-    commit = "https://github.com/luizdepra/hugo-coder/tree/"
+    commit = "https://github.com/ericfuerstenberg/hierux.cloud"
 
     rtl = false
 

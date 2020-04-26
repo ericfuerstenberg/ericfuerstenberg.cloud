@@ -3,17 +3,62 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://hierux.cloud/</loc>
-    <lastmod>2020-04-22T08:07:23-07:00</lastmod>
+    <loc>https://hierux.cloud/posts/terraform-cicd-codeship/</loc>
+    <lastmod>2020-04-25T17:33:31-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hierux.cloud/tags/hugo/</loc>
-    <lastmod>2020-04-22T08:07:23-07:00</lastmod>
+    <loc>https://hierux.cloud/tags/aws/</loc>
+    <lastmod>2020-04-25T17:33:31-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hierux.cloud/tags/cloud/</loc>
+    <lastmod>2020-04-25T17:33:31-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hierux.cloud/tags/cloudfront/</loc>
+    <lastmod>2020-04-25T17:33:31-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hierux.cloud/</loc>
+    <lastmod>2020-04-25T17:33:31-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hierux.cloud/tags/learning/</loc>
+    <lastmod>2020-04-25T17:33:31-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://hierux.cloud/posts/</loc>
+    <lastmod>2020-04-25T17:33:31-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hierux.cloud/tags/route53/</loc>
+    <lastmod>2020-04-25T17:33:31-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hierux.cloud/tags/s3/</loc>
+    <lastmod>2020-04-25T17:33:31-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hierux.cloud/tags/</loc>
+    <lastmod>2020-04-25T17:33:31-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hierux.cloud/tags/terraform/</loc>
+    <lastmod>2020-04-25T17:33:31-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hierux.cloud/tags/hugo/</loc>
     <lastmod>2020-04-22T08:07:23-07:00</lastmod>
   </url>
   
@@ -23,52 +68,12 @@
   </url>
   
   <url>
-    <loc>https://hierux.cloud/tags/</loc>
-    <lastmod>2020-04-22T08:07:23-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hierux.cloud/tags/terraform/</loc>
-    <lastmod>2020-04-22T08:07:23-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://hierux.cloud/posts/daily1/</loc>
     <lastmod>2020-04-22T08:07:23-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hierux.cloud/tags/aws/</loc>
-    <lastmod>2020-04-18T14:39:34-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hierux.cloud/tags/cloud/</loc>
-    <lastmod>2020-04-18T14:39:34-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hierux.cloud/tags/cloudfront/</loc>
-    <lastmod>2020-04-18T14:39:34-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://hierux.cloud/posts/static-s3-ssl-cloudfront/</loc>
-    <lastmod>2020-04-18T14:39:34-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hierux.cloud/tags/learning/</loc>
-    <lastmod>2020-04-18T14:39:34-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hierux.cloud/tags/route53/</loc>
-    <lastmod>2020-04-18T14:39:34-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hierux.cloud/tags/s3/</loc>
     <lastmod>2020-04-18T14:39:34-07:00</lastmod>
   </url>
   
@@ -124,6 +129,10 @@
   
   <url>
     <loc>https://hierux.cloud/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hierux.cloud/tags/ci/cd/</loc>
   </url>
   
   <url>

@@ -6,10 +6,21 @@
     <description>Recent content in cloud on eric fuerstenberg</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 18 Apr 2020 14:39:34 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 25 Apr 2020 17:33:31 -0700</lastBuildDate>
     
 	<atom:link href="https://hierux.cloud/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Automating with Terraform and CodeShip</title>
+      <link>https://hierux.cloud/posts/terraform-cicd-codeship/</link>
+      <pubDate>Sat, 25 Apr 2020 17:33:31 -0700</pubDate>
+      
+      <guid>https://hierux.cloud/posts/terraform-cicd-codeship/</guid>
+      <description>Tear it down and automate! Today I completely tore down my existing infrastructure for this static website and rebuilt the entire thing in Terraform! They say you never truly understand something until you can write automation, tear it down, and rebuild it in just a few minutes. See updates to the git repo here.
+I&amp;rsquo;m one step closer in the pursuit of everything-as-code!
+This site still relies on the same underlying infrastructure: AWS S3 for static hosting, Route53 for DNS, and CloudFront for CDN and SSL, but I also integrated a CI/CD pipeline using CodeShip to increase the efficiency of pushing changes to production.</description>
+    </item>
     
     <item>
       <title>Hosting a high performance static site with S3, Route53, &amp; SSL via CloudFront</title>

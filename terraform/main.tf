@@ -52,9 +52,12 @@ resource "aws_iam_user_policy" "codeship" {
 resource "aws_route53_record" "www" {
  zone_id = "${var.aws_zone_id}"
  name    = "${var.hostname}"
- type    = "CNAME"
- ttl     = "300"
- records = ["${module.hugosite.cloudfront_hostname}"]
+ type    = "A"
+ alias {
+   name = "${module.hugosite.cloudfront_hostname}"
+   zone_id = "Z2FDTNDATAQYW2"
+   evaluate_target_health = false
+ }
 }
 
 # #Import existing S3 bucket

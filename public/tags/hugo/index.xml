@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hugo on eric fuerstenberg</title>
-    <link>https://www.hierux.cloud/tags/hugo/</link>
+    <link>https://hierux.cloud/tags/hugo/</link>
     <description>Recent content in hugo on eric fuerstenberg</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 22 Apr 2020 08:07:23 -0700</lastBuildDate>
     
-	<atom:link href="https://www.hierux.cloud/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hierux.cloud/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Today I learned..</title>
-      <link>https://www.hierux.cloud/posts/daily1/</link>
+      <link>https://hierux.cloud/posts/daily1/</link>
       <pubDate>Wed, 22 Apr 2020 08:07:23 -0700</pubDate>
       
-      <guid>https://www.hierux.cloud/posts/daily1/</guid>
+      <guid>https://hierux.cloud/posts/daily1/</guid>
       <description>Here&amp;rsquo;s what I&amp;rsquo;m up to today.  Studying python Alerts as code! Continuing my work on templatizing alerts and dashboards in Terraform, using the Wavefront TF provider integration. Creating a framework to programmatically manage all of my team&amp;rsquo;s active alerts and dashboards in Wavefront using Terraform. Making small tweaks to this Hugo site.  to-do list includes:  add an &amp;ldquo;about me&amp;rdquo; &amp;amp; skills section configure the infrastructure in terraform (s3 buckets, route53 dns assignments, cloudfront distribution) set up ci/cd pipeline using codeship for automatic deployments      </description>
     </item>
     
     <item>
       <title>Reference: Hugo coder wiki</title>
-      <link>https://www.hierux.cloud/posts/hugo-coder-wiki/</link>
+      <link>https://hierux.cloud/posts/hugo-coder-wiki/</link>
       <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.hierux.cloud/posts/hugo-coder-wiki/</guid>
+      <guid>https://hierux.cloud/posts/hugo-coder-wiki/</guid>
       <description></description>
     </item>
     

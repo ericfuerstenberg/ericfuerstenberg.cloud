@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on eric fuerstenberg</title>
-    <link>https://www.hierux.cloud/categories/</link>
+    <link>https://hierux.cloud/categories/</link>
     <description>Recent content in Categories on eric fuerstenberg</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 17 Jan 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.hierux.cloud/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hierux.cloud/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Development</title>
-      <link>https://www.hierux.cloud/categories/development/</link>
+      <link>https://hierux.cloud/categories/development/</link>
       <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.hierux.cloud/categories/development/</guid>
+      <guid>https://hierux.cloud/categories/development/</guid>
       <description></description>
     </item>
     

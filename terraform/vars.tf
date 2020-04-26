@@ -20,7 +20,7 @@ variable "aws_zone_id" {
  description = "AWS Route 53 Zone ID for DNS"
 }
 variable "hostname" {
- default     = "www.hierux.cloud"
+ default     = "hierux.cloud"
  description = "Full hostname for Route 53 entry"
 }
 variable "deployment_user_arn" {

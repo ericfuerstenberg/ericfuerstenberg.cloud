@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on eric fuerstenberg</title>
-    <link>https://www.hierux.cloud/series/</link>
+    <link>https://hierux.cloud/series/</link>
     <description>Recent content in Series on eric fuerstenberg</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 18 Apr 2020 08:46:50 -0700</lastBuildDate>
     
-	<atom:link href="https://www.hierux.cloud/series/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hierux.cloud/series/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Learning</title>
-      <link>https://www.hierux.cloud/series/learning/</link>
+      <link>https://hierux.cloud/series/learning/</link>
       <pubDate>Sat, 18 Apr 2020 08:46:50 -0700</pubDate>
       
-      <guid>https://www.hierux.cloud/series/learning/</guid>
+      <guid>https://hierux.cloud/series/learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>https://www.hierux.cloud/series/hugo/</link>
+      <link>https://hierux.cloud/series/hugo/</link>
       <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.hierux.cloud/series/hugo/</guid>
+      <guid>https://hierux.cloud/series/hugo/</guid>
       <description></description>
     </item>
     

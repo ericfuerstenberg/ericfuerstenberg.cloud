@@ -17,11 +17,9 @@ tags = [
 
 Today I completely tore down my existing infrastructure for this static website and rebuilt the entire thing in Terraform! They say you never truly understand something until you can write automation, tear it down, and rebuild it in just a few minutes. See updates to the [git repo here](https://github.com/ericfuerstenberg/hierux.cloud/tree/master/terraform). 
 
-I'm one step closer in the pursuit of everything-as-code!
+One step closer in the pursuit of *everything-as-code*!
 
-![terraform-logo](/images/everything-as-code.png)
-
-This site still relies on the same underlying infrastructure: AWS S3 for static hosting, Route53 for DNS, and CloudFront for CDN and SSL, but I also integrated a CI/CD pipeline using CodeShip to increase the efficiency of pushing changes to production. 
+This site still relies on the same underlying infrastructure: AWS S3 for static hosting, Route53 for DNS, and CloudFront for CDN and SSL, but I also integrated a CI/CD pipeline using CodeShip to automate the build and deployment of this website to my production S3 bucket.
 
 I also got my first exposure to using public modules in Terraform and really spent some time pouring over the code to understand how everything fit together. 
 

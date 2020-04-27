@@ -12,13 +12,13 @@
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Automating with Terraform and CodeShip"/>
 <meta name="twitter:description" content="Tear it down and automate! Today I completely tore down my existing infrastructure for this static website and rebuilt the entire thing in Terraform! They say you never truly understand something until you can write automation, tear it down, and rebuild it in just a few minutes. See updates to the git repo here.
-I&rsquo;m one step closer in the pursuit of everything-as-code!
-This site still relies on the same underlying infrastructure: AWS S3 for static hosting, Route53 for DNS, and CloudFront for CDN and SSL, but I also integrated a CI/CD pipeline using CodeShip to increase the efficiency of pushing changes to production."/>
+One step closer in the pursuit of everything-as-code!
+This site still relies on the same underlying infrastructure: AWS S3 for static hosting, Route53 for DNS, and CloudFront for CDN and SSL, but I also integrated a CI/CD pipeline using CodeShip to automate the build and deployment of this website to my production S3 bucket."/>
 
     <meta property="og:title" content="Automating with Terraform and CodeShip" />
 <meta property="og:description" content="Tear it down and automate! Today I completely tore down my existing infrastructure for this static website and rebuilt the entire thing in Terraform! They say you never truly understand something until you can write automation, tear it down, and rebuild it in just a few minutes. See updates to the git repo here.
-I&rsquo;m one step closer in the pursuit of everything-as-code!
-This site still relies on the same underlying infrastructure: AWS S3 for static hosting, Route53 for DNS, and CloudFront for CDN and SSL, but I also integrated a CI/CD pipeline using CodeShip to increase the efficiency of pushing changes to production." />
+One step closer in the pursuit of everything-as-code!
+This site still relies on the same underlying infrastructure: AWS S3 for static hosting, Route53 for DNS, and CloudFront for CDN and SSL, but I also integrated a CI/CD pipeline using CodeShip to automate the build and deployment of this website to my production S3 bucket." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://hierux.cloud/posts/terraform-cicd-codeship/" />
 <meta property="article:published_time" content="2020-04-25T17:33:31-07:00" />
@@ -65,7 +65,7 @@ This site still relies on the same underlying infrastructure: AWS S3 for static 
     <link rel="icon" type="image/png" href="https://hierux.cloud/favicon.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://hierux.cloud/images/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.69.0" />
+    <meta name="generator" content="Hugo 0.68.3" />
   </head>
 
   
@@ -156,9 +156,8 @@ This site still relies on the same underlying infrastructure: AWS S3 for static 
         
         <h3 id="tear-it-down-and-automate">Tear it down and automate!</h3>
 <p>Today I completely tore down my existing infrastructure for this static website and rebuilt the entire thing in Terraform! They say you never truly understand something until you can write automation, tear it down, and rebuild it in just a few minutes. See updates to the <a href="https://github.com/ericfuerstenberg/hierux.cloud/tree/master/terraform">git repo here</a>.</p>
-<p>I&rsquo;m one step closer in the pursuit of everything-as-code!</p>
-<p><img src="https://hierux.cloud/images/everything-as-code.png" alt="terraform-logo"></p>
-<p>This site still relies on the same underlying infrastructure: AWS S3 for static hosting, Route53 for DNS, and CloudFront for CDN and SSL, but I also integrated a CI/CD pipeline using CodeShip to increase the efficiency of pushing changes to production.</p>
+<p>One step closer in the pursuit of <em>everything-as-code</em>!</p>
+<p>This site still relies on the same underlying infrastructure: AWS S3 for static hosting, Route53 for DNS, and CloudFront for CDN and SSL, but I also integrated a CI/CD pipeline using CodeShip to automate the build and deployment of this website to my production S3 bucket.</p>
 <p>I also got my first exposure to using public modules in Terraform and really spent some time pouring over the code to understand how everything fit together.</p>
 <h3 id="here-were-my-steps-roughly-outlined">Here were my steps (roughly outlined):</h3>
 <p>Note: I accomplished the majority of this with help from <a href="https://rollout.io/blog/automate-your-hugo-site-with-codeship-and-terraform/">https://rollout.io/blog/automate-your-hugo-site-with-codeship-and-terraform/</a></p>

@@ -75,11 +75,10 @@ I&amp;rsquo;ve hosted static sites using a number of different strategies in the
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://hierux.cloud/about/</guid>
-      <description>Hugo is a static site engine written in Go.
-It makes use of a variety of open source projects including:
- Cobra Viper J Walter Weatherman Cast  Learn more and contribute on GitHub.
-Setup Some fun facts about Hugo:
- Built in Go Loosely inspired by Jekyll Primarily developed by spf13 on the train while commuting to and from Manhattan. Coded in Vim using spf13-vim  Have questions or suggestions?</description>
+      <description>Hi, I&amp;rsquo;m Eric Fuerstenberg.
+I&amp;rsquo;m an operations engineer with a broad base of experience in public cloud (primarily AWS, some GPC), site reliability, and crafting automation to defeat toil.
+I use a variety of tools in my day to day. Here&amp;rsquo;s a short list:
+ AWS (IAM, EC2, S3, CloudWatch, CloudTrail) Linux, LDAP, Django, Python Wavefront, Splunk, Kibana Terraform, Puppet, Codeship, git  Most recently, my interests have shifted toward mastering infrastructure-as-code and cloud based solutions for building and maintaining highly scalable and highly available services.</description>
     </item>
     
     <item>

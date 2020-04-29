@@ -3,27 +3,19 @@ title = "About Me"
 slug = "about"
 +++
 
-Hugo is a static site engine written in Go.
+Hi, I'm Eric Fuerstenberg.
 
+I'm an operations engineer with a broad base of experience in public cloud (primarily AWS, some GPC), site reliability, and crafting automation to defeat toil. 
 
-It makes use of a variety of open source projects including:
+I use a variety of tools in my day to day. Here's a short list:
 
-* [Cobra](https://github.com/spf13/cobra)
-* [Viper](https://github.com/spf13/viper)
-* [J Walter Weatherman](https://github.com/spf13/jWalterWeatherman)
-* [Cast](https://github.com/spf13/cast)
+- AWS (IAM, EC2, S3, CloudWatch, CloudTrail)
+- Linux, LDAP, Django, Python
+- Wavefront, Splunk, Kibana
+- Terraform, Puppet, Codeship, git
 
-Learn more and contribute on [GitHub](https://github.com/spf13).
+Most recently, my interests have shifted toward mastering infrastructure-as-code and cloud based solutions for building and maintaining highly scalable and highly available services. 
 
-## Setup
+If that sounds like your cup of tea, I have a few projects on GitHub that may be of interest. 
 
-Some fun facts about [Hugo](http://gohugo.io/):
-
-* Built in [Go](http://golang.org/)
-* Loosely inspired by [Jekyll](http://jekyllrb.com/)
-* Primarily developed by [spf13](http://spf13.com/) on the train while commuting to and from Manhattan.
-* Coded in [Vim](http://vim.org) using [spf13-vim](http://vim.spf13.com/)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/spf13/hugo/issues/new) or [ask me on Twitter](https://twitter.com/spf13).
-
-Thanks for reading!
+[Check them out here.](https://github.com/ericfuerstenberg)

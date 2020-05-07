@@ -5,7 +5,7 @@ slug = "about"
 
 Hi, I'm Eric Fuerstenberg.
 
-I'm an operations engineer with a broad base of experience in public cloud (primarily AWS), site reliability, and crafting automation to defeat toil. 
+I'm an operations engineer with a broad base of experience in public cloud (primarily AWS).
 
 I use a variety of tools in my day to day. Here's a short list:
 

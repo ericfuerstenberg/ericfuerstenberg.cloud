@@ -18,4 +18,9 @@ Today I made a small tweak to my CodeShip build/deployment pipeline. I had previ
 
 Instead, I added the public/ directory to my .gitignore file and removed it from the remote repo (`git rm -r --cached public/`). I then had to reconfigure my CodeShip deployment steps to download and build my hugo site instead of relying on the existing public/ directory in the repo. 
 
-I now have a much more efficient workflow. Simply make changes locally, test them locally if desired, then commit and push them to my remote master. CodeShip will then deploy any updates to master to my S3 bucket and the changes will automatically reflect on the website. 
+I now have a much more efficient workflow. Simply make changes locally, test, then commit and push to my remote master. CodeShip will then deploy any updates to master to my S3 bucket and the changes will automatically reflect on the website. 
+
+Here's to small, incremental improvements.. 
+
+¯\\\_(ツ)\_/¯
+

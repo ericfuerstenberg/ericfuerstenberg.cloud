@@ -76,7 +76,7 @@ I&amp;rsquo;ve hosted static sites using a number of different strategies in the
       
       <guid>https://hierux.cloud/about/</guid>
       <description>Hi, I&amp;rsquo;m Eric Fuerstenberg.
-I&amp;rsquo;m an operations engineer with a broad base of experience in public cloud (primarily AWS, some GPC), site reliability, and crafting automation to defeat toil.
+I&amp;rsquo;m an operations engineer with a broad base of experience in public cloud (primarily AWS), site reliability, and crafting automation to defeat toil.
 I use a variety of tools in my day to day. Here&amp;rsquo;s a short list:
  AWS (IAM, EC2, S3, CloudWatch, CloudTrail) Linux, LDAP, Django, Python Wavefront, Splunk, Kibana Terraform, Puppet, Codeship, git  Most recently, my interests have shifted toward mastering infrastructure-as-code and cloud based solutions for building and maintaining highly scalable and highly available services.</description>
     </item>

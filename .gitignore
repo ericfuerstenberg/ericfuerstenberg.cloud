@@ -4,6 +4,7 @@
 ### Hugo ###
 # Generated files by hugo
 /resources/_gen/
+/public
 
 # Executable may be added to repository
 hugo.exe

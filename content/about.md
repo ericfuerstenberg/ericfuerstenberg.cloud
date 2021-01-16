@@ -5,14 +5,14 @@ slug = "about"
 
 Hi, I'm Eric Fuerstenberg.
 
-I'm an operations engineer with a broad base of experience in public cloud (primarily AWS).
+I'm a site reliability enginer engineer with a broad base of experience in public cloud (primarily AWS and GCP).
 
 I use a variety of tools in my day to day. Here's a short list:
 
-- AWS (IAM, EC2, S3, CloudWatch, CloudTrail)
-- Linux, LDAP, Django, Python
+- AWS (IAM, EC2, S3, DynamoDB, EventBridge, CloudWatch, SNS)
+- Linux, Python, Docker, LDAP
 - Wavefront, Splunk, Kibana
-- Terraform, Puppet, Codeship, git
+- Terraform/Terragrunt, Puppet, Jenkins, git
 
 Most recently, my interests have shifted toward mastering infrastructure-as-code and cloud based solutions for building and maintaining highly scalable and highly available services. 
 

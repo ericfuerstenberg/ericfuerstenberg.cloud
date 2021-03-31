@@ -13,9 +13,9 @@ tags = [
 
 ## Update: Hugo
 
-I recently reconfigured my static website (still hosted at [cloud.hierux.com](http://cloud.hierux.com)) into a more feature rich site using [Hugo](https://gohugo.io/) - you're looking at it right now! This allows me to make use of style templates and other feature enhancements while keeping things simple with markdown.
+I recently reconfigured my static website (still hosted at [cloud.ericfuerstenberg.com](http://cloud.ericfuerstenberg.com)) into a more feature rich site using [Hugo](https://gohugo.io/) - you're looking at it right now! This allows me to make use of style templates and other feature enhancements while keeping things simple with markdown.
 
-You can find the Hugo-ified version of my website in my [Github repo.](https://github.com/ericfuerstenberg/hierux.cloud)
+You can find the Hugo-ified version of my website in my [Github repo.](https://github.com/ericfuerstenberg/ericfuerstenberg.cloud)
 
 I've hosted static sites using a number of different strategies in the past. For example, I used to have a blog running in a dockerized nginx configuration on an ec2 instance. Other times I've simply used httpd and a static index.html file living on an ec2 instance. However, all of these cases required some management of the underlying infrastructure via ssh and this meant that I'd need to configure security groups, keep track of private keys, and maintain the underlying instances via regular updates. Nothing nightmare inducing, but they still required regular ssh checkups and tinkering to keep things running as expected.
 
@@ -27,20 +27,20 @@ By using a combination of S3, CloudFront, and Route53 you can set up a highly av
 
 ## Here was my process..
 **S3**
-1. create two S3 buckets (one for hierux.cloud and another for www.hierux.cloud that will handle redirects)
+1. create two S3 buckets (one for ericfuerstenberg.cloud and another for www.ericfuerstenberg.cloud that will handle redirects)
 2. upload your public content (in my case, everything in my `public/` directory under my hugo project)
-    - `aws s3 cp public/ s3://hierux.cloud --recursive`
+    - `aws s3 cp public/ s3://ericfuerstenberg.cloud --recursive`
 3. enable static website hosting on your main bucket & enter your index and error documents
     - Make note of the bucket endpoint (e.g., `http://your-bucket-name.s3-website.your-region-here.amazonaws.com`) - you'll need this later when configuring your CloudFront origin.
-4. write a simple S3 bucket policy in JSON that allows full access to S3:GetObjects in your primary bucket (hierux.com)
-5. you should now simply be able to access your hugo website by navigating to the bucket endpoint - I ran into some issues with the default `baseURL` set in my `config.toml` file. I changed it to reflect my S3 endpoint and repopulated the `public/` directories by relaunching my site locally before syncing my changes up to s3 again using `aws s3 sync public/ s3://hierux.cloud`. Once this was complete the site was loading as expected via S3. 
+4. write a simple S3 bucket policy in JSON that allows full access to S3:GetObjects in your primary bucket (ericfuerstenberg.com)
+5. you should now simply be able to access your hugo website by navigating to the bucket endpoint - I ran into some issues with the default `baseURL` set in my `config.toml` file. I changed it to reflect my S3 endpoint and repopulated the `public/` directories by relaunching my site locally before syncing my changes up to s3 again using `aws s3 sync public/ s3://ericfuerstenberg.cloud`. Once this was complete the site was loading as expected via S3. 
 
 **route 53 for dns**
-   - CNAME pointing www.hierux.cloud to hierux.cloud
-   - Alias record pointing hierux.cloud to my cloudfront distribution endpoint (allows us to handle redirects)
+   - CNAME pointing www.ericfuerstenberg.cloud to ericfuerstenberg.cloud
+   - Alias record pointing ericfuerstenberg.cloud to my cloudfront distribution endpoint (allows us to handle redirects)
 
 **SSL & amazon certificate manager**
-   - set up a basic SSL certificate covering www.hierux.com and hierux.com endpoints
+   - set up a basic SSL certificate covering www.ericfuerstenberg.com and ericfuerstenberg.com endpoints
    - since this is all native to AWS, Route53 takes care of the DNS validation for you during the ssl cert generation process (otherwise you would need to validate via email)
 
 **configure cloudfront distribution**
@@ -50,5 +50,5 @@ By using a combination of S3, CloudFront, and Route53 you can set up a highly av
 Before you sync with S3, make sure you run the raw server command to specify the baseURL
 
 notes:
-`aws s3 sync public/ s3://hierux.cloud --delete`
-`hugo server -D --renderToDisk --baseURL=https://hierux.cloud --appendPort=false`
+`aws s3 sync public/ s3://ericfuerstenberg.cloud --delete`
+`hugo server -D --renderToDisk --baseURL=https://ericfuerstenberg.cloud --appendPort=false`

@@ -1,4 +1,4 @@
-baseurl = "https://hierux.cloud/"
+baseurl = "https://ericfuerstenberg.cloud/"
 title = "Eric Fuerstenberg"
 
 theme = "hugo-coder"
@@ -13,7 +13,7 @@ pygmentsstyle = "b2"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-disqusShortname = "hierux"
+disqusShortname = "ericfuerstenberg"
 
 [params]
     author = "Eric Fuerstenberg"
@@ -33,7 +33,7 @@ disqusShortname = "hierux"
     since = 2019
 
     # Git Commit in Footer, uncomment the line below to enable it.
-    commit = "https://github.com/ericfuerstenberg/hierux.cloud"
+    commit = "https://github.com/ericfuerstenberg/ericfuerstenberg.cloud"
 
     rtl = false
 

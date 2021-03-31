@@ -15,7 +15,7 @@ tags = [
 +++
 ### Tear it down and automate!
 
-Today I completely tore down my existing infrastructure for this static website and rebuilt the entire thing in Terraform! They say you never truly understand something until you can write automation, tear it down, and rebuild it in just a few minutes. See updates to the [git repo here](https://github.com/ericfuerstenberg/hierux.cloud/tree/master/terraform). 
+Today I completely tore down my existing infrastructure for this static website and rebuilt the entire thing in Terraform! They say you never truly understand something until you can write automation, tear it down, and rebuild it in just a few minutes. See updates to the [git repo here](https://github.com/ericfuerstenberg/ericfuerstenberg.cloud/tree/master/terraform). 
 
 One step closer in the pursuit of *everything-as-code*!
 
@@ -29,7 +29,7 @@ Note: I accomplished the majority of this with help from https://rollout.io/blog
 
 - First, I created a new `/terraform` folder in my existing git repo for this project and populated it with a main.tf, provider.tf, and vars.tf. I used an external terraform module called [hugo-s3-cloudfront](https://registry.terraform.io/modules/fillup/hugo-s3-cloudfront/aws/4.0.0) and configured settings based on my specific implementation (variable names, region, etc). It took quite some time to read through the code to fully understand how it all fit together - but this was a great learning experience, especially because I'm in the process of writing my own modules for a [Wavefront alerts-as-code project](https://github.com/ericfuerstenberg/terraform-wavefront-alerts) at work.
 
-- After configuring the local terraform files, the next step was to create an s3 bucket `hierux-terraform` to serve as the backend to store the .tfstate file safely.
+- After configuring the local terraform files, the next step was to create an s3 bucket `ericfuerstenberg-terraform` to serve as the backend to store the .tfstate file safely.
 
 - Next, I created a dynamo db table to provide a state locking mechanism for the .tfvars file - we don't want anyone or anything else modifying this statefile when we're making changes to our infrastructure. 
 
@@ -39,7 +39,7 @@ Note: I accomplished the majority of this with help from https://rollout.io/blog
 
     ![success!](/images/terraform-site.png)
 
-- I then configured an S3 bucket at www.hierux.cloud to redirect requests to hierux.cloud. This also required setting an alias record pointing www.hierux.cloud to hierux.cloud in Route 53, which directs requests to the cloudfront endpoint with SSL enabled.
+- I then configured an S3 bucket at www.ericfuerstenberg.cloud to redirect requests to ericfuerstenberg.cloud. This also required setting an alias record pointing www.ericfuerstenberg.cloud to ericfuerstenberg.cloud in Route 53, which directs requests to the cloudfront endpoint with SSL enabled.
 
 - Finally, I configured a CI/CD pipeline using github and CodeShip. This process was MUCH easier than I expected and really only required providing instructions on how to download, extract, and install hugo along with configuring the integration with github and aws (providing keys, destination s3 bucket, and logic around what branch I wanted this to work on). Effectively, setting up this pipeline allows me to push my local changes to master branch and automatically publish them to my production environment. 
 

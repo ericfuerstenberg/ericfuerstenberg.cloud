@@ -54,29 +54,29 @@ series = ["Learning"]
 **04/07/20**  
 
 1\. studying high availability architecture (acloudguru)  
-2\. building a fault tolerant wordpress site - [blog.hierux.com](http://blog.hierux.com)  
+2\. building a fault tolerant wordpress site - [blog.ericfuerstenberg.com](http://blog.ericfuerstenberg.com)  
 3\. first, create ec2 instance, and rds instance, two s3 buckets (one for code, one for static images), and a cloudfront distribution to serve static images more quickly to clients  
 4\. write a quick bootstrap script to:  
     - install httpd (apache), php, php-mysql to get ec2 instance up an running  
     - download wordpress, unzip, install, and configure permissions on the directory  
 5\. start wordpress and configure it to point to our rds database.  
-6\. created an initial blog post (http://blog.hierux.com/index.php/2020/04/07/cloud-engineering/), uploaded a couple pictures, and saved the post  
+6\. created an initial blog post (http://blog.ericfuerstenberg.com/index.php/2020/04/07/cloud-engineering/), uploaded a couple pictures, and saved the post  
 7\. backed up the files on the ec2 instance in /var/www/html/wp-content to my s3 bucket dedicated to images and also backed up the entire /var/www/html directory to my s3 bucket dedicated to code  
 8\. set up an application load balancer in ec2, using a simple health check against a /healthy.html file, created a target group of instances and assigned them to the load balancer.  
-9\. finally, created a new record set in route 53 to point blog.hierux.com at the application load balancer to get DNS fully set up for the new website.  
+9\. finally, created a new record set in route 53 to point blog.ericfuerstenberg.com at the application load balancer to get DNS fully set up for the new website.  
 10\. setting up a writer node and reader nodes  
 11\. i configured a single writer node that will push all changes made to S3\.  
     - yhis allows me to have an instance that polls our s3 bucket looking for changes and pulls the changes down to our reader nodes.  
     - route 53 will send traffic to the reader nodes only.  
 12\. to configure the reader nodes, set up a crontab to scan s3 every minute and download any changes to the instance  
-    - (*/1 * * * * root aws s3 sync --delete s3://hierux.com-wordpress-code /var/www/htnl).  
+    - (*/1 * * * * root aws s3 sync --delete s3://ericfuerstenberg.com-wordpress-code /var/www/htnl).  
     - this will sync our reader node with the remote s3 bucket and delete all content on the reader node that is no present in the s3 bucket.  
     - basically it ensures consistency with the remote s3 bucket.  
 13\. then, I created an AMI of the current state of the reader node  
     - this will we our reference image for all future reader nodes.  
 14\. I then assigned this AMI to an autoscaling group in ec2 so that I can build out the remaining fleet of reader nodes automatically.  
 15\. finally, re-purpose your previous single instance into a writer node by configuring crontab to sync both s3 buckets (code & images) with content that is on the writer node.  
-    - I'll use the writer node to make changes to the wordpress side (blog.hierux.com/wp-admin) and push changes to s3  
+    - I'll use the writer node to make changes to the wordpress side (blog.ericfuerstenberg.com/wp-admin) and push changes to s3  
     - the reader nodes will pull down and serve this content to any users  
 
 ![crontab](/images/crontab-writer-node.png))
@@ -106,8 +106,8 @@ I'm starting this project back up! Looking to practice hosting content in AWS an
 2\. created a new git repo `aws-tooling` to house my aws cli scripts  
 3\. configured AWS CLI, created users, and assigned policies via CLI  
 4\. created two simple bash scripts. One to list all users in an AWS accout line by line. Another to provide a pretty output of all groups that a given user belongs to.  
-5\. registered this domain (hierux.com) in Route53 and created a created a record set to point to the EC2 instance I also created.  
-6\. spun up an EC2 instance (cloud1), installed nginx, pulled my old hierux.com git repo down, and re-launched this static website to track my notes.  
+5\. registered this domain (ericfuerstenberg.com) in Route53 and created a created a record set to point to the EC2 instance I also created.  
+6\. spun up an EC2 instance (cloud1), installed nginx, pulled my old ericfuerstenberg.com git repo down, and re-launched this static website to track my notes.  
 
 ![hyper](/images/hyper.png)
 
@@ -134,8 +134,8 @@ I'm starting this project back up! Looking to practice hosting content in AWS an
 6\. system update, install whatever other tools you need  
 7\. install nginx (https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/#installing-a-prebuilt-package)  
 8\. configure nginx ( https://www.linode.com/docs/web-servers/nginx/nginx-installation-and-basic-setup/)  
-    -website stuff lives in /var/www/hierux.tech/  
-    -nginx general config lives in /etc/nginx/nginx.conf/hierux.tech.conf  
+    -website stuff lives in /var/www/ericfuerstenberg.tech/  
+    -nginx general config lives in /etc/nginx/nginx.conf/ericfuerstenberg.tech.conf  
 
 Congrats! You have deployed a shitty static website! Now dockerize it.  
 
@@ -163,23 +163,23 @@ Congrats! You have deployed a shitty static website! Now dockerize it.
 1\. pulled nginx docker image and configured container to launch using local www files on ec2 instance  
 2\. shut down nginx running locally on ec2 instance  
 3\. launch nginx docker container on http port 80, map to port 80 on ec2 instance  
-    - $ docker container run --name dev.hierux.tech -v /var/www/hierux.tech/dev:/usr/share/nginx/html:ro -p80:80 -d nginx  
+    - $ docker container run --name dev.ericfuerstenberg.tech -v /var/www/ericfuerstenberg.tech/dev:/usr/share/nginx/html:ro -p80:80 -d nginx  
 
 4\. shifting gears to learn more about git  
 5\. setting up new dev-branch  
-6\. playing around with pull requests and merging. Set up environment so I have production code living in /var/www/hierux.tech/dev and a development space in ~/webdev/hierux.tech/dev. I am making changes in development space and pushing to master, then pulling to production space. Trying to emulate standard dev/prod workflow.  
+6\. playing around with pull requests and merging. Set up environment so I have production code living in /var/www/ericfuerstenberg.tech/dev and a development space in ~/webdev/ericfuerstenberg.tech/dev. I am making changes in development space and pushing to master, then pulling to production space. Trying to emulate standard dev/prod workflow.  
 
 **11/3/18**  
 
 1\. working on setting up elastic IP for server in AWS (54.219.207.176), attach it to the running ec2 instance  
-2\. rename dev.heirux.tech to learn.hierux.tech, create new A record with dns provider  
+2\. rename dev.heirux.tech to learn.ericfuerstenberg.tech, create new A record with dns provider  
 3\. update hostname and /etc/hosts/ on server  
-4\. change local directory structure to reflect name change (/var/www/hierux.tech/dev to /var/www/hierux.tech/learn and ~/webdev/hierux.tech/dev to ~/webdev/hierux.tech/learn), push these changes to git, merge with master to change directory names in production  
+4\. change local directory structure to reflect name change (/var/www/ericfuerstenberg.tech/dev to /var/www/ericfuerstenberg.tech/learn and ~/webdev/ericfuerstenberg.tech/dev to ~/webdev/ericfuerstenberg.tech/learn), push these changes to git, merge with master to change directory names in production  
 5\. change tags on ec2 instance to reflect name change  
 
-6\. set up staging on learn.hierux.tech:8080 so I can test my changes before pushing to production.  
-7\. launch a new container with port 80 mapped to 8080 on ec2 instance (docker container run --name staging -v /home/hierux/webdev/hierux.tech/learn:/usr/share/nginx/html:ro -p8080:80 -d nginx).  
-8\. add new inbound rule to security group for ec2 instance to allow TCP on port 8080\. view staging at learn.hierux.tech:8080  
+6\. set up staging on learn.ericfuerstenberg.tech:8080 so I can test my changes before pushing to production.  
+7\. launch a new container with port 80 mapped to 8080 on ec2 instance (docker container run --name staging -v /home/ericfuerstenberg/webdev/ericfuerstenberg.tech/learn:/usr/share/nginx/html:ro -p8080:80 -d nginx).  
+8\. add new inbound rule to security group for ec2 instance to allow TCP on port 8080\. view staging at learn.ericfuerstenberg.tech:8080  
 
 **TO DO:**  
 

@@ -1,26 +1,26 @@
 variable "aliases" {
  type        = "list"
- default     = ["www.hierux.cloud", "hierux.cloud"]
+ default     = ["www.ericfuerstenberg.cloud", "ericfuerstenberg.cloud"]
  description = "List of hostname aliases"
 }
 variable "aws_region" {
  default = "us-east-1"
 }
 variable "bucket_name" {
- default = "hierux.cloud"
+ default = "ericfuerstenberg.cloud"
 }
 variable "codeship_username" {
- default = "codeship"
+ default = "codeship_v2"
 }
 variable "cert_domain_name" {
- default = "hierux.cloud"
+ default = "ericfuerstenberg.cloud"
 }
 variable "aws_zone_id" {
- default     = "Z06950211Y62TGQGKYGUK"
+ default     = "Z057811734MEM0GH7QDU6"
  description = "AWS Route 53 Zone ID for DNS"
 }
 variable "hostname" {
- default     = "hierux.cloud"
+ default     = "ericfuerstenberg.cloud"
  description = "Full hostname for Route 53 entry"
 }
 variable "deployment_user_arn" {

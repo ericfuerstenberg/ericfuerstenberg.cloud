@@ -3,7 +3,7 @@
 #the AWS credentials profile you want to use.
 terraform {
  backend "s3" {
-   bucket         = "hierux.cloud-terraform"
+   bucket         = "ericfuerstenberg.cloud-terraform"
    key            = "terraform.tfstate"
    region         = "us-east-1"
    encrypt        = true

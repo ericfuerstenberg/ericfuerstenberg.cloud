@@ -61,6 +61,6 @@ resource "aws_route53_record" "www" {
 }
 
 # #Import existing S3 bucket
-# resource "aws_s3_bucket" "hierux-cloud" {
+# resource "aws_s3_bucket" "ericfuerstenberg-cloud" {
 #   # ...instance configuration...
 # }

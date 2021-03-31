@@ -10,7 +10,7 @@ I'm a site reliability enginer engineer with a broad base of experience in publi
 I use a variety of tools in my day to day. Here's a short list:
 
 - AWS (IAM, EC2, S3, DynamoDB, EventBridge, CloudWatch, SNS)
-- Linux, Python, Docker, LDAP
+- Linux, Python, boto3 SDK, aws cli, gcloud, Docker, LDAP
 - Wavefront, Splunk, Kibana
 - Terraform/Terragrunt, Puppet, Jenkins, git
 

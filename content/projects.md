@@ -3,9 +3,7 @@ title = "Projects"
 slug = "projects"
 +++
 
-crypto-bot
-
-https://github.com/ericfuerstenberg/crypto-bot
+[crypto-bot](https://github.com/ericfuerstenberg/crypto-bot)
 
 - Written in Python 3, leveraging ccxt exchange library, deployed on AWS
 - Implemented dynamic, trailing stop loss functionality for personal use

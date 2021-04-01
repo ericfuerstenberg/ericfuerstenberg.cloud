@@ -10,7 +10,7 @@ variable "bucket_name" {
  default = "ericfuerstenberg.cloud"
 }
 variable "codeship_username" {
- default = "codeship_v2"
+ default = "codeship"
 }
 variable "cert_domain_name" {
  default = "ericfuerstenberg.cloud"

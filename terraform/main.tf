@@ -38,10 +38,11 @@ resource "aws_iam_user_policy" "codeship" {
       {
         "Action": [
             "s3:PutObject",
-            "s3:PutObjectAcl"
+            "s3:PutObjectAcl",
+            "s3:GetObject"
         ],
         "Effect": "Allow",
-        "Resource": "arn:aws:s3:::${var.bucket_name}/public/*"
+        "Resource": "arn:aws:s3:::${var.bucket_name}/*"
       }
     ]
   }

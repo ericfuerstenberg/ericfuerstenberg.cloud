@@ -5,11 +5,11 @@ slug = "about"
 
 Hi, I'm Eric Fuerstenberg.
 
-I'm a site reliability enginer engineer with a broad base of experience in public cloud (primarily AWS and GCP).
+I'm a site reliability engineer with a broad base of experience in public cloud (primarily AWS and GCP).
 
 I use a variety of tools in my day to day. Here's a short list:
 
-- AWS (IAM, EC2, S3, DynamoDB, EventBridge, CloudWatch, SNS)
+- AWS (IAM, EC2, S3, DynamoDB, EventBridge, CloudWatch, SNS/SQS)
 - Linux, Python, boto3 SDK, aws cli, gcloud, Docker, LDAP
 - Wavefront, Splunk, Kibana
 - Terraform/Terragrunt, Puppet, Jenkins, git

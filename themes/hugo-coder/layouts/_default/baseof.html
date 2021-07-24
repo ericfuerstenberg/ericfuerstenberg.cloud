@@ -87,7 +87,7 @@
       {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
 
-    {{ if .Params.og_image }}
+    {{ if .Site.Params.og_image }}
       <meta property="og:image" content="{{.Site.BaseURL}}{{ .Params.og_image | relURL }}" />
       <meta property="og:image:secure_url" content="{{ .Params.og_image | absURL }}" />
     {{ else }}

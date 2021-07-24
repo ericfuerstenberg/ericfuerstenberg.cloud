@@ -87,10 +87,21 @@
       {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
 
+    {{ if .Params.og_image }}
+    <meta property="og:image" content="{{.Site.BaseURL}}{{ .Site.Params.og_image | default "/images/thumbnail.png" | absURL 
+    }}" />
+    <meta property="og:image:secure_url" content="{{ .Site.Params.og_image | default "/images/thumbnail.png" | absURL }}" />
+    {{ else }}
+    <meta property="og:image" content="{{.Site.BaseURL}}{{ .Site.Params.og_image | default "/images/thumbnail.png" | 
+    absURL }}" />
+    <meta property="og:image:secure_url" content="{{ .Site.Params.og_image | default "/images/thumbnail.png" | absURL }}" 
+    />
+    {{ end }}
+
     {{ hugo.Generator }}
   </head>
 
-  {{ $csClass := "colorscheme-light" }}
+  {{ $csClass := "colorscheme-light" }}i
   {{ if eq .Site.Params.colorscheme "dark" }}
     {{ $csClass = "colorscheme-dark" }}
   {{ else if eq .Site.Params.colorscheme "auto" }}

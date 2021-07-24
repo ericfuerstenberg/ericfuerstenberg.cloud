@@ -22,7 +22,7 @@ disqusShortname = "ericfuerstenberg"
     info = "Cloud Engineer @ Box"
     avatarurl = "eric_avatar.jpg"
     favicon_32 = "favicon.png"
-    image = "thumbnail.png"
+    og_image = "thumbnail.png"
     #gravatar = "john.doe@example.com"
     footercontent = "Built on AWS | Automated with Terraform and CodeShip "
 

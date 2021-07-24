@@ -86,8 +86,6 @@
       {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
 
-    <meta name="image" property="og:image" content="https://ericfuerstenberg.cloud/thumbnail.png">
-
     {{ hugo.Generator }}
   </head>
 

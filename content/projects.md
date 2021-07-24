@@ -3,8 +3,10 @@ title = "Projects"
 slug = "projects"
 +++
 
-[crypto-trailing-stop](https://github.com/ericfuerstenberg/crypto-bot)
+[crypto-trailing-dca](https://github.com/ericfuerstenberg/crypto-trailing-dca)
 
-- API-driven trading bot written in Python 3, leveraging ccxt library, deployed on AWS
-- Implements trailing stop-loss functionality for popular crypto exchange CoinbasePro
-- Designed to be launched in either a) “buy-mode” to create a dollar cost average (DCA) strategy that capitalizes on short-term down swings or b) “sell-mode” to maximize profits by executing an exit strategy based on predefined take-profit thresholds and trailing stop losses
+* API-driven bot written in Python 3, leveraging ccxt library, deployed on AWS EC2
+* Provides trailing stop functionality for orders on popular crypto exchange (CoinbasePro)
+* Implements configurable “buy-side” and “sell-side” DCA strategies that allow users to:
+    * schedule automatic ACH deposits & purchases using trailing-stop buy orders
+    * maximize profits by executing an exit strategy based on predefined take-profit thresholds and trailing-stop sell orders
